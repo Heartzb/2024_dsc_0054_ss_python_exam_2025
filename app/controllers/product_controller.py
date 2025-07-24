@@ -42,6 +42,7 @@ def register_product():
     except Exception as e:
         db.session.rollback() 
         return jsonify({"error":str(e)}),HTTP_500_INTERNAL_SERVER_ERROR
+    #get all products
         
 @product.route('/', methods=['GET'])
 def get_all_products():

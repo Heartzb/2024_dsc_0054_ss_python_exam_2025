@@ -7,7 +7,7 @@ class Product(db.Model):
     id= db.Column(db.Integer,Primary_key=True,auto_increment=True,nullable=False)
     name=db.Column(db.String(225),nullable=False)
     price=db.Column(db.String(225),nullable=False)
-    category=db.Column(db.String(225),Foreign_Key=True, nullable=False)
+    category=db.Column(db.String(225),nullable=False)
     expiry_date=db.Column(db.String(50),nullable=False)
 
     
